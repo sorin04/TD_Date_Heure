@@ -1,20 +1,30 @@
-body {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-h1 {
-    text-align: left;
-    position: relative;
-}
 
 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 20%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
 }
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+.DateDebut {
+    flex: 1;
+}
+.DateDebut {
+    text-align: right;
+}
+.DateFin {
+    text-align: left;
+}
+
+.DateFin {
+    flex: 1;
+}
+.DateFin {
+    text-align: right;
+}
+.DateFin {
+    text-align: right;
+}
+
+

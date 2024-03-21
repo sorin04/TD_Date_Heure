@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <title>Bonjour</title>
     <link rel="stylesheet" href="css/css.css">
-<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 <h1>Les Dates</h1>
-
-<div class="container">
-        <div class="DateDebut">
-            <p>Veuillez saisir votre date :</p>
-            <input type="date" id="debut_date">
+<div class="row">
+    <div class="col s6">
+        <div class="container">
+            <div class="DateDebut">
+                <p>Veuillez saisir votre date :</p>
+                <input type="date" id="debut_date" onchange="calculerEcart()">
+            </div>
         </div>
-        <div class=" DateFin">
-            <p>La deuxième date :</p>
-            <input type="date" id="date_fin">
+    </div>
+    <div class="col s6">
+        <div class="container2">
+            <div class="DateFin">
+                <p>Veuillez saisir votre date :</p>
+                <input type="date" id="date_fin" onchange="calculerEcart()">
+            </div>
         </div>
+    </div>
 </div>
+
+
+<div id="resultat"></div>
+
+<div class="row">
+    <div class="col s6">
+        <div class="container">
+            <div class="debut_heure">
+                <p>Veuillez saisir vos heure :</p>
+                <input type="heure_debut" id="debut_heure" onchange="calculerEcart_Heure()">
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="container3">
+            <div class="heure_fin">
+                <p>Veuillez saisir vos heure :</p>
+                <input type="heure_debut" id="heure_fin" onchange="calculerEcart_Heure()">
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 </body>
